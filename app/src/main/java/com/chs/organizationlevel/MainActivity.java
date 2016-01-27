@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
         expandableListView.setOnChildClickListener(new ExpandableListView.OnChildClickListener() {
             @Override
             public boolean onChildClick(ExpandableListView parent, View v, int groupPosition, int childPosition, long id) {
-
+               Toast.makeText(MainActivity.this,"groupPosition: "+groupPosition+"   childPosition: "+childPosition,Toast.LENGTH_SHORT).show();
                 return true;
             }
         });
